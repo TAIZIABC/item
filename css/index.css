@@ -21,13 +21,16 @@ div.ppt{margin: 5px auto;width: 80%;}
 .card-group .card{margin: 10px;box-shadow: 5px 5px 5px #888888;}
 .name{margin-top:0.7rem;margin-left:1.2rem;color: red;}
 
+
+.rounded-circle{width: 2.5rem;}
 /*返回顶部*/
 div.toTop{position: fixed;bottom: 2rem;right: 2rem;}
+.toTop a{font-size: 1.5rem;}
 /*返回顶部结束*/
-.footer{height: 7rem;background: blue;}
-.footer ul {display: flex;width: 50%;margin: 2rem auto 0 auto;}
+
+/*底部*/
+.footer{height: 7rem;background: blue;margin: 0 auto;width: 100%;}
+.footer ul {display: flex;margin: 2rem auto 0 auto;justify-content:center;}
 .footer ul li{padding: 1.2rem;text-align: center;}
 .footer p{text-align: center;color: white;}
-/*底部*/
-.footer{}
 /*底部结束*/

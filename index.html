@@ -4,13 +4,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 		<title>主页</title>
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="//at.alicdn.com/t/font_486809_u7yamy1ig5zmpldi.js"></script>
+		<script type="text/javascript" src="//at.alicdn.com/t/font_486809_ljh2pjvbi03k57b9.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -28,17 +28,39 @@
 						<a class="nav-link" href="#">主页 <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">同城</a>
+						<a class="nav-link" href="#">发布</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							登入
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#loginModal">登入</a>
+							<a class="dropdown-item" href="avascript:;" data-toggle="modal" data-target="#resModel">注册</a>
+						</div>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							我的
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-gerenzhongxin1"></use>
+								</svg>个人中心
+							</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
+							<a class="dropdown-item" href="#">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-tongzhi"></use>
+								</svg>通知
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-icon_logout"></use>
+								</svg>注销
+							</a>
 						</div>
 					</li>
 				</ul>
@@ -50,6 +72,74 @@
 		</nav>
 		<!--导航栏结束-->
 
+		<!--登入窗口-->
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">
+							登入
+						</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="log_name">用户名：</label>
+								<input type="text" class="form-control" id="log_name" placeholder="">
+							</div>
+							<div class="form-group">
+								<label for="log_passward">密码：</label>
+								<input type="password" class="form-control" id="log_passward" placeholder="">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary">登入</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--登入框结束-->
+
+		<!--注册框-->
+		<div class="modal fade" id="resModel" tabindex="-1" role="dialog" aria-labelledby="resModel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">
+							注册
+						</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="name">用户名：</label>
+								<input type="text" class="form-control" id="name" placeholder="">
+							</div>
+							<div class="form-group">
+								<label for="passward">密码：</label>
+								<input type="password" class="form-control" id="passward" placeholder="">
+							</div>
+							<div class="form-group">
+								<label for="tel">手机号码：</label>
+								<input type="tel" class="form-control" id="tel" placeholder="">
+							</div>
+							<div class="form-group">
+								<label for="adress">地区：</label>
+								<input type="text" class="form-control" id="adress" placeholder="">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary">注册</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--注册框结束-->
 		<!--轮播图-->
 		<div class="ppt">
 			<div id="demo" class="carousel slide" data-ride="carousel">
@@ -113,14 +203,16 @@
 					</div>
 				</div>
 				<div class="card">
-					<img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22259%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20259%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1626c509560%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1626c509560%22%3E%3Crect%20width%3D%22259%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.2578125%22%20y%3D%2296%22%3E259x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+					<a href="http://www.baidu.com">
+						<img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22259%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20259%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1626c509560%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1626c509560%22%3E%3Crect%20width%3D%22259%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.2578125%22%20y%3D%2296%22%3E259x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+					</a>
 					<div class="card-body">
 						<div class="item-user">
 							<img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2275%22%20height%3D%2275%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2075%2075%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1626c66f4ba%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1626c66f4ba%22%3E%3Crect%20width%3D%2275%22%20height%3D%2275%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2219.34375%22%20y%3D%2242%22%3E75x75%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="..." class="rounded-circle">
-							<span class="name">发布人：taizi</span>
+							<span class="name">发布人：<a href="">taizi</a></span>
 						</div>
 						<hr />
-						<h5 class="card-title">标题</h5>
+						<h5 class="card-title"><a href="">标题</a></h5>
 						<p class="card-text">his content is a little bit longer.</p>
 						<svg class="icon" aria-hidden="true">
 							<use xlink:href="#icon-pinglun"></use>
@@ -270,20 +362,51 @@
 					</div>
 				</div>
 			</div>
-
-			<!--底部-->
-			<div class="footer">
-				<ul>
-					<li><a href="">关于我们</a></li>
-					<li><a href="">共建单位</a></li>
-					<li><a href="">联系方式</a></li>
-					<li><a href="">友情链接</a></li>
+			<!--分页-->
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item disabled">
+						<a class="page-link" href="#" tabindex="-1">上一页</a>
+					</li>
+					<li class="page-item active">
+						<a class="page-link " href="#">1</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">2</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">3</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">下一页</a>
+					</li>
 				</ul>
-				<p>©2004-2016 教育部中国大学生在线网站 版权所有 京ICP备10028400号-2 京公安网备11010502025664</p>
-			</div>
-			<!--底部结束-->
+			</nav>
+
+			<!--分页结束-->
+
 		</div>
 		<!--列表内容结束-->
+
+		<!--底部-->
+		<div class="footer">
+			<ul>
+				<li>
+					<a href="">关于我们</a>
+				</li>
+				<li>
+					<a href="">共建单位</a>
+				</li>
+				<li>
+					<a href="">联系方式</a>
+				</li>
+				<li>
+					<a href="">友情链接</a>
+				</li>
+			</ul>
+			<p>©2004-2016 教育部中国大学生在线网站 版权所有 京ICP备10028400号-2 京公安网备11010502025664</p>
+		</div>
+		<!--底部结束-->
 
 		<!--返回顶部-->
 		<div class="toTop">
