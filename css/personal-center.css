@@ -28,7 +28,7 @@ body{background: #F5F5F5;}
 
 /*右侧内容*/
 .right-content{background: white;}
-.my-works>p,.my-like>p,.my-news>p,.my-set>p{text-align: left;font-size: 1.5rem}
+.my-works>p,.my-like>p,.my-news>p,.my-set>p{text-align: left;font-size: 1.5rem;line-height: 2rem;}
 .works-item{border-bottom: #f5f5f5 solid 1.5rem;}
 .works-item-right span{display: inline-block;width: 3rem;}
 .img-thumbnail{width: 25rem;height: auto;}
