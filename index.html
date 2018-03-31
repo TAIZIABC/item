@@ -3,14 +3,11 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<title>主页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="//at.alicdn.com/t/font_486809_ljh2pjvbi03k57b9.js"></script>
-		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	</head>
 
 	<body>
@@ -112,7 +109,7 @@
 						</h4>
 					</div>
 					<div class="modal-body">
-						<form>
+						
 							<div class="form-group">
 								<label for="name">用户名：</label>
 								<input type="text" class="form-control" id="name" placeholder="">
@@ -126,10 +123,22 @@
 								<input type="tel" class="form-control" id="tel" placeholder="">
 							</div>
 							<div class="form-group">
-								<label for="adress">地区：</label>
-								<input type="text" class="form-control" id="adress" placeholder="">
+								<label for="tel">地区：</label>
+								<div data-toggle="distpicker">
+									<div class="form-group">
+										<label class="sr-only" for="province2">Province</label>
+										<select class="form-control" id="province2" data-province="---- 选择省 ----"></select>
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="city2">City</label>
+										<select class="form-control" id="city2" data-city="---- 选择市 ----"></select>
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="district2">District</label>
+										<select class="form-control" id="district2" data-district="---- 选择区 ----"></select>
+									</div>
+								</div>
 							</div>
-						</form>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -138,7 +147,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!--注册框结束-->
 		<!--轮播图-->
 		<div class="ppt">
@@ -419,7 +427,14 @@
 				</button>
 		</div>
 		<!--返回顶部结束-->
-
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="//at.alicdn.com/t/font_486809_ljh2pjvbi03k57b9.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="source/angular.min.js"></script>
+		<script src="js/distpicker.data.js"></script>
+		<script src="js/distpicker.js"></script>
+		<!--<script src="js/main.js"></script>-->
 		<script type="text/javascript">
 			$(function() {
 
