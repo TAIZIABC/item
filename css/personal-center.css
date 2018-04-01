@@ -10,6 +10,7 @@ img{border:none;}
 a{text-decoration:none;}
 .hidden{display: none;}
 .show{display: block;}
+.right{float: right;}
 .now{background: #546478 !important;color: white;}
 input,textarea{outline:none; resize:none; border:none;}
 .clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
@@ -28,7 +29,7 @@ body{background: #F5F5F5;}
 
 /*右侧内容*/
 .right-content{background: white;}
-.my-works>p,.my-like>p,.my-news>p,.my-set>p{text-align: left;font-size: 1.5rem;line-height: 2rem;}
+.my-works>p,.my-like>p,.my-news>p,.my-set>p{text-align: left;font-size: 1.5rem;padding: 0.5rem;border-bottom: #CDCDCD solid 2px;border-top: #CDCDCD solid 2px;}
 .works-item{border-bottom: #f5f5f5 solid 1.5rem;}
 .works-item-right span{display: inline-block;width: 3rem;}
 .img-thumbnail{width: 25rem;height: auto;}

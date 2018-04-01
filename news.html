@@ -28,15 +28,6 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							登入
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#loginModal">登入</a>
-							<a class="dropdown-item" href="avascript:;" data-toggle="modal" data-target="#resModel">注册</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							我的
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -77,7 +68,7 @@
 							<span><a href="">taizi</a></span>
 						</div>
 						<div class="list-group menu-list">
-							<a href="javascript:;" class="list-group-item active">
+							<a href="javascript:;" class="list-group-item ">
 								<svg class="icon" aria-hidden="true">
 									<use xlink:href="#icon-gerenzhongxin1"></use>
 								</svg>&nbsp;我的作品
@@ -87,7 +78,7 @@
 									<use xlink:href="#icon-shoucang"></use>
 								</svg>&nbsp;我的收藏
 							</a>
-							<a href="javascript:;" class="list-group-item">
+							<a href="javascript:;" class="list-group-item active">
 								<svg class="icon" aria-hidden="true">
 									<use xlink:href="#icon-tongzhi"></use>
 								</svg>&nbsp;我的消息
@@ -104,7 +95,7 @@
 				<div class="col-sm-8">
 					<div class="right-content">
 						<!--我的作品-->
-						<div class="my-works ">
+						<div class="my-works hidden">
 							<p>作品列表</p>
 							<ul class="works">
 								<li class="works-item">
@@ -338,10 +329,10 @@
 						</div>
 						<!--我的收藏结束-->
 						<!--我的信息-->
-						<div class="my-news hidden">
+						<div class="my-news ">
 							<p>信息列表</p>
 							<ul class="news-list">
-								<a href="" class="now" >
+								<a href="" class="now">
 									<li>全部信息</li>
 								</a>
 								<a href="">
@@ -359,7 +350,7 @@
 									<td>
 										<a href="">小强</a>
 									</td>
-									<td >
+									<td>
 										<a href="">支付宝提醒</a>
 									</td>
 									<td class="text-right mail-date">昨天 10:20</td>
@@ -371,7 +362,7 @@
 									<td>
 										<a href="">小强</a>
 									</td>
-									<td >
+									<td>
 										<a href="">支付宝提醒</a>
 									</td>
 									<td class="text-right mail-date">昨天 10:20</td>
@@ -383,7 +374,7 @@
 									<td>
 										<a href="">小强</a>
 									</td>
-									<td >
+									<td>
 										<a href="">支付宝提醒</a>
 									</td>
 									<td class="text-right mail-date">昨天 10:20</td>
@@ -395,7 +386,7 @@
 									<td>
 										<a href="">小强</a>
 									</td>
-									<td >
+									<td>
 										<a href="">支付宝提醒</a>
 									</td>
 									<td class="text-right mail-date">昨天 10:20</td>
@@ -407,7 +398,7 @@
 									<td>
 										<a href="">小强</a>
 									</td>
-									<td >
+									<td>
 										<a href="">支付宝提醒</a>
 									</td>
 									<td class="text-right mail-date">昨天 10:20</td>
@@ -419,7 +410,7 @@
 									<td>
 										<a href="">小强</a>
 									</td>
-									<td >
+									<td>
 										<a href="">支付宝提醒</a>
 									</td>
 									<td class="text-right mail-date">昨天 10:20</td>
@@ -431,7 +422,7 @@
 									<td>
 										<a href="">小强</a>
 									</td>
-									<td >
+									<td>
 										<a href="">支付宝提醒</a>
 									</td>
 									<td class="text-right mail-date">昨天 10:20</td>
@@ -443,7 +434,7 @@
 									<td>
 										<a href="">小强</a>
 									</td>
-									<td >
+									<td>
 										<a href="">支付宝提醒</a>
 									</td>
 									<td class="text-right mail-date">昨天 10:20</td>
@@ -455,15 +446,31 @@
 									<td>
 										<a href="">小强</a>
 									</td>
-									<td >
+									<td>
 										<a href="">支付宝提醒</a>
 									</td>
 									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">&nbsp;全选
+									</td>
+									<td colspan="3">
+										<button class="btn btn-white btn-sm" title="刷新"><svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-shuaxin2"></use></svg>
+										</button>
+										<button class="btn btn-white btn-sm" title="标为已读"><svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-liulan3"></use></svg>
+										</button>
+										<button class="btn btn-white btn-sm" title="标为重要"><svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-tanhao-"></use></svg>
+										</button>
+									</td>
 								</tr>
 							</table>
 							<!--分页-->
 							<nav aria-label="Page navigation example">
-								<ul class="pagination justify-content-center">
+								<ul class="pagination justify-content-center  ">
 									<li class="page-item disabled">
 										<a class="page-link" href="#" tabindex="-1">上一页</a>
 									</li>
@@ -482,7 +489,6 @@
 								</ul>
 							</nav>
 							<!--分页结束-->
-
 						</div>
 						<!--我的消息结束-->
 
@@ -576,7 +582,7 @@
 
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="//at.alicdn.com/t/font_486809_zpnygb7zyjbgldi.js"></script>
+		<script type="text/javascript" src="//at.alicdn.com/t/font_486809_ebype8x5nfzs38fr.js"></script>
 		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script src="source/angular.min.js"></script>
 		<script src="js/distpicker.data.js"></script>
