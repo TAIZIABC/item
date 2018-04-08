@@ -462,7 +462,9 @@
 								</tr>
 								<tr class="unread">
 									<td class="check-mail">
-										<input type="checkbox" class="i-checks">&nbsp;全选
+										<label for="allChecked">
+											<input type="checkbox" class="i-checks" id="allChecked">&nbsp;全选
+										</label>
 									</td>
 									<td colspan="3">
 										<button class="btn btn-white btn-sm" title="刷新"><svg class="icon" aria-hidden="true">
@@ -471,8 +473,8 @@
 										<button class="btn btn-white btn-sm" title="标为已读"><svg class="icon" aria-hidden="true">
 											<use xlink:href="#icon-liulan3"></use></svg>
 										</button>
-										<button class="btn btn-white btn-sm" title="标为重要"><svg class="icon" aria-hidden="true">
-											<use xlink:href="#icon-tanhao-"></use></svg>
+										<button class="btn btn-white btn-sm" title="删除"><svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-iconfontshanchu1"></use></svg>
 										</button>
 									</td>
 								</tr>
@@ -507,6 +509,12 @@
 							<p>个人信息</p>
 							<table class="table">
 								<tr>
+									<td>头像：</td>
+									<td>
+										<img src="http://thirdqq.qlogo.cn/g?b=sdk&k=Bwt6KS7ct6wEaqP2J6A4Yg&s=100&t=1509328747" alt="..." class="rounded-circle m-t-xs img-responsive sm-img">
+									</td>
+								</tr>
+								<tr>
 									<td>用户名：</td>
 									<td>taizi</td>
 								</tr>
@@ -518,12 +526,7 @@
 									<td>手机号码：</td>
 									<td>15462369854</td>
 								</tr>
-								<tr>
-									<td>头像：</td>
-									<td>
-										<img src="http://thirdqq.qlogo.cn/g?b=sdk&k=Bwt6KS7ct6wEaqP2J6A4Yg&s=100&t=1509328747" alt="..." class="rounded-circle m-t-xs img-responsive sm-img">
-									</td>
-								</tr>
+								
 								<tr>
 									<td>地区：</td>
 									<td>江西省赣州市章贡区</td>
@@ -656,6 +659,9 @@
 					var index = $(".menu-list a").index(this);
 					$(".menu-list a").eq(index).addClass("active").siblings().removeClass("active");
 					$(".right-content>div").eq(index).addClass("show").removeClass("hidden").siblings().addClass("hidden").removeClass("show");
+				});
+				$("#allChecked").on("click",function(){
+					$(":checkbox[class='i-checks']").prop("checked",this.checked);
 				})
 			})
 		</script>
