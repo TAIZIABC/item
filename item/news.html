@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>个人中心</title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/personal-center.css" />
+	</head>
+
+	<body>
+
+		<!--导航栏-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">导航</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="publish.html">发布</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							我的
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="personal-center.html">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-gerenzhongxin1"></use>
+								</svg>个人中心
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="news.html">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-tongzhi"></use>
+								</svg>通知
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-icon_logout"></use>
+								</svg>注销
+							</a>
+						</div>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+		<!--导航栏结束-->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="left-menu ">
+						<div class="head-img">
+							<img src="http://thirdqq.qlogo.cn/g?b=sdk&k=Bwt6KS7ct6wEaqP2J6A4Yg&s=100&t=1509328747" alt="..." class="rounded-circle m-t-xs img-responsive" title="点击更换头像">
+							<span><a href="">taizi</a></span>
+						</div>
+						<div class="list-group menu-list">
+							<a href="javascript:;" class="list-group-item ">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-gerenzhongxin1"></use>
+								</svg>&nbsp;我的作品
+							</a>
+							<a href="javascript:;" class="list-group-item">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-shoucang"></use>
+								</svg>&nbsp;我的收藏
+							</a>
+							<a href="javascript:;" class="list-group-item active">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-tongzhi"></use>
+								</svg>&nbsp;我的消息
+							</a>
+							<a href="javascript:;" class="list-group-item">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-shezhi"></use>
+								</svg>&nbsp;个人设置
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-8">
+					<div class="right-content">
+						<!--我的作品-->
+						<div class="my-works hidden">
+							<p>作品列表</p>
+							<ul class="works">
+								<li class="works-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522500799916&di=f70352959e9c3268e8ea3d5d072011d7&imgtype=0&src=http%3A%2F%2Fwww.zhiwuwang.com%2Ffile%2Fupload%2F201501%2F15%2F14-12-24-22-26573.jpg" alt="" />
+										</div>
+										<div class="col-sm-9">
+											<h4><a href="">环保汽车</a></h4>
+											<p>hello wordhello wordhello wordhello wordhello wordhello wordhello word</p>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-pinglun"></use>
+												</svg>33
+											</span>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-liulan3"></use>
+												</svg>44
+											</span>
+											<time class="right">发布于：2018-3-30 20:12:45</time>
+										</div>
+									</div>
+								</li>
+								<li class="works-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522498495390&di=be4a3f601f61c6f7bb245907d68b6dc8&imgtype=0&src=http%3A%2F%2Fwww.huishoushang.com%2FUserDocument%2Fnews%2F2015%2F9%2F201598153828287.jpg" alt="" />
+										</div>
+										<div class="col-sm-9 works-item-right">
+											<h4><a href="">环保汽车</a></h4>
+											<p>hello wordhello wordhello wordhello wordhello wordhello wordhello word</p>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-pinglun"></use>
+												</svg>33
+											</span>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-liulan3"></use>
+												</svg>44
+											</span>
+											<time class="right">发布于：2018-3-30 20:12:45</time>
+										</div>
+									</div>
+								</li>
+								<li class="works-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522498495388&di=9b8e83619bb029d88c5917217e68f587&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0126765a27ad36a801216e8de1d963.jpg%401280w_1l_2o_100sh.jpg" alt="" />
+										</div>
+										<div class="col-sm-9 works-item-right">
+											<h4><a href="">环保汽车</a></h4>
+											<p>hello wordhello wordhello wordhello wordhello wordhello wordhello word</p>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-pinglun"></use>
+												</svg>33
+											</span>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-liulan3"></use>
+												</svg>44
+											</span>
+											<time class="right">发布于：2018-3-30 20:12:45</time>
+										</div>
+									</div>
+								</li>
+								<li class="works-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522501541228&di=bce7b6a1fea81e3de3a03053cd05b1d6&imgtype=0&src=http%3A%2F%2Fs4.cdn.deahu.com%2Fjingyan%2Fimage_cluster%2F2015-04-19%2F0%2F7022530_0813CCF24FF55B90947A7F9D841086BE.jpg" alt="" />
+											<!--<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522498495388&di=9b8e83619bb029d88c5917217e68f587&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0126765a27ad36a801216e8de1d963.jpg%401280w_1l_2o_100sh.jpg" alt="" />-->
+										</div>
+										<div class="col-sm-9 works-item-right">
+											<h4><a href="">环保汽车</a></h4>
+											<p>hello wordhello wordhello wordhello wordhello wordhello wordhello word</p>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-pinglun"></use>
+												</svg>33
+											</span>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-liulan3"></use>
+												</svg>44
+											</span>
+											<time class="right">发布于：2018-3-30 20:12:45</time>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!--分页-->
+							<nav aria-label="Page navigation example">
+								<ul class="pagination justify-content-center">
+									<li class="page-item disabled">
+										<a class="page-link" href="#" tabindex="-1">上一页</a>
+									</li>
+									<li class="page-item active">
+										<a class="page-link " href="#">1</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">2</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">3</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">下一页</a>
+									</li>
+								</ul>
+							</nav>
+							<!--分页结束-->
+						</div>
+						<!--我的作品结束-->
+						<!--我的收藏-->
+						<div class="my-like hidden">
+							<p>收藏列表</p>
+							<ul class="works">
+								<li class="works-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522498495388&di=9b8e83619bb029d88c5917217e68f587&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0126765a27ad36a801216e8de1d963.jpg%401280w_1l_2o_100sh.jpg" alt="" />
+										</div>
+										<div class="col-sm-9">
+											<h4><a href="">环保汽车</a></h4>
+											<p>hello wordhello wordhello wordhello wordhello wordhello wordhello word</p>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-pinglun"></use>
+												</svg>33
+											</span>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-liulan3"></use>
+												</svg>44
+											</span>
+											<time class="right">发布于：2018-3-30 20:12:45</time>
+										</div>
+									</div>
+								</li>
+								<li class="works-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522498495390&di=be4a3f601f61c6f7bb245907d68b6dc8&imgtype=0&src=http%3A%2F%2Fwww.huishoushang.com%2FUserDocument%2Fnews%2F2015%2F9%2F201598153828287.jpg" alt="" />
+										</div>
+										<div class="col-sm-9 works-item-right">
+											<h4><a href="">环保汽车</a></h4>
+											<p>hello wordhello wordhello wordhello wordhello wordhello wordhello word</p>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-pinglun"></use>
+												</svg>33
+											</span>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-liulan3"></use>
+												</svg>44
+											</span>
+											<time class="right">发布于：2018-3-30 20:12:45</time>
+										</div>
+									</div>
+								</li>
+								<li class="works-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522500799916&di=f70352959e9c3268e8ea3d5d072011d7&imgtype=0&src=http%3A%2F%2Fwww.zhiwuwang.com%2Ffile%2Fupload%2F201501%2F15%2F14-12-24-22-26573.jpg" alt="" />
+										</div>
+										<div class="col-sm-9 works-item-right">
+											<h4><a href="">环保汽车</a></h4>
+											<p>hello wordhello wordhello wordhello wordhello wordhello wordhello word</p>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-pinglun"></use>
+												</svg>33
+											</span>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-liulan3"></use>
+												</svg>44
+											</span>
+											<time class="right">发布于：2018-3-30 20:12:45</time>
+										</div>
+									</div>
+								</li>
+								<li class="works-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522501541228&di=bce7b6a1fea81e3de3a03053cd05b1d6&imgtype=0&src=http%3A%2F%2Fs4.cdn.deahu.com%2Fjingyan%2Fimage_cluster%2F2015-04-19%2F0%2F7022530_0813CCF24FF55B90947A7F9D841086BE.jpg" alt="" />
+											<!--<img class="img-thumbnail" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522498495388&di=9b8e83619bb029d88c5917217e68f587&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0126765a27ad36a801216e8de1d963.jpg%401280w_1l_2o_100sh.jpg" alt="" />-->
+										</div>
+										<div class="col-sm-9 works-item-right">
+											<h4><a href="">环保汽车</a></h4>
+											<p>hello wordhello wordhello wordhello wordhello wordhello wordhello word</p>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-pinglun"></use>
+												</svg>33
+											</span>
+											<span>
+												<svg class="icon" aria-hidden="true">
+													<use xlink:href="#icon-liulan3"></use>
+												</svg>44
+											</span>
+											<time class="right">发布于：2018-3-30 20:12:45</time>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!--分页-->
+							<nav aria-label="Page navigation example">
+								<ul class="pagination justify-content-center">
+									<li class="page-item disabled">
+										<a class="page-link" href="#" tabindex="-1">上一页</a>
+									</li>
+									<li class="page-item active">
+										<a class="page-link " href="#">1</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">2</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">3</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">下一页</a>
+									</li>
+								</ul>
+							</nav>
+							<!--分页结束-->
+						</div>
+						<!--我的收藏结束-->
+						<!--我的信息-->
+						<div class="my-news ">
+							<p>信息列表</p>
+							<ul class="news-list">
+								<a href="" class="now">
+									<li>全部信息</li>
+								</a>
+								<a href="">
+									<li>未读消息</li>
+								</a>
+								<a href="">
+									<li>已读消息</li>
+								</a>
+							</ul>
+							<table class="table table-hover news-list-item">
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">
+									</td>
+									<td>
+										<a href="">小强</a>
+									</td>
+									<td>
+										<a href="">支付宝提醒</a>
+									</td>
+									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">
+									</td>
+									<td>
+										<a href="">小强</a>
+									</td>
+									<td>
+										<a href="">支付宝提醒</a>
+									</td>
+									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">
+									</td>
+									<td>
+										<a href="">小强</a>
+									</td>
+									<td>
+										<a href="">支付宝提醒</a>
+									</td>
+									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">
+									</td>
+									<td>
+										<a href="">小强</a>
+									</td>
+									<td>
+										<a href="">支付宝提醒</a>
+									</td>
+									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">
+									</td>
+									<td>
+										<a href="">小强</a>
+									</td>
+									<td>
+										<a href="">支付宝提醒</a>
+									</td>
+									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">
+									</td>
+									<td>
+										<a href="">小强</a>
+									</td>
+									<td>
+										<a href="">支付宝提醒</a>
+									</td>
+									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">
+									</td>
+									<td>
+										<a href="">小强</a>
+									</td>
+									<td>
+										<a href="">支付宝提醒</a>
+									</td>
+									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">
+									</td>
+									<td>
+										<a href="">小强</a>
+									</td>
+									<td>
+										<a href="">支付宝提醒</a>
+									</td>
+									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">
+									</td>
+									<td>
+										<a href="">小强</a>
+									</td>
+									<td>
+										<a href="">支付宝提醒</a>
+									</td>
+									<td class="text-right mail-date">昨天 10:20</td>
+								</tr>
+								<tr class="unread">
+									<td class="check-mail">
+										<input type="checkbox" class="i-checks">&nbsp;全选
+									</td>
+									<td colspan="3">
+										<button class="btn btn-white btn-sm" title="刷新"><svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-shuaxin2"></use></svg>
+										</button>
+										<button class="btn btn-white btn-sm" title="标为已读"><svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-liulan3"></use></svg>
+										</button>
+										<button class="btn btn-white btn-sm" title="标为重要"><svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-tanhao-"></use></svg>
+										</button>
+									</td>
+								</tr>
+							</table>
+							<!--分页-->
+							<nav aria-label="Page navigation example">
+								<ul class="pagination justify-content-center  ">
+									<li class="page-item disabled">
+										<a class="page-link" href="#" tabindex="-1">上一页</a>
+									</li>
+									<li class="page-item active">
+										<a class="page-link " href="#">1</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">2</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">3</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">下一页</a>
+									</li>
+								</ul>
+							</nav>
+							<!--分页结束-->
+						</div>
+						<!--我的消息结束-->
+
+						<!--个人设置-->
+						<div class="my-set hidden">
+							<p>个人信息</p>
+							<table class="table">
+								<tr>
+									<td>用户名：</td>
+									<td>taizi</td>
+								</tr>
+								<tr>
+									<td>性别：</td>
+									<td>男</td>
+								</tr>
+								<tr>
+									<td>手机号码：</td>
+									<td>15462369854</td>
+								</tr>
+								<tr>
+									<td>头像：</td>
+									<td>
+										<img src="http://thirdqq.qlogo.cn/g?b=sdk&k=Bwt6KS7ct6wEaqP2J6A4Yg&s=100&t=1509328747" alt="..." class="rounded-circle m-t-xs img-responsive sm-img">
+									</td>
+								</tr>
+								<tr>
+									<td>地区：</td>
+									<td>江西省赣州市章贡区</td>
+								</tr>
+								<tr>
+									<td>个性签名：</td>
+									<td>节能减排，你我同行！</td>
+								</tr>
+
+							</table>
+							<button class="btn btn-primary" data-toggle="modal" data-target="#modifyModel">修改个人信息</button>
+						</div>
+						<!--注册框-->
+						<div class="modal fade" id="modifyModel" tabindex="-1" role="dialog" aria-labelledby="modifyModel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title" id="myModalLabel">修改个人信息</h4>
+									</div>
+									<div class="modal-body">
+										<div class="form-group">
+											<label for="name">用户名：</label>
+											<input type="text" class="form-control" id="name" placeholder="">
+										</div>
+										<div class="form-group">
+											<label for="passward">密码：</label>
+											<input type="password" class="form-control" id="passward" placeholder="">
+										</div>
+										<div class="form-group">
+											<label for="">性别：</label>
+											<input type="radio" name="sex" />男
+											<input type="radio" name="sex" />女
+										</div>
+										<div class="form-group">
+											<label for="tel">地区：</label>
+											<div data-toggle="distpicker">
+												<div class="form-group">
+													<label class="sr-only" for="province2">Province</label>
+													<select class="form-control" id="province2" data-province="---- 选择省 ----"></select>
+												</div>
+												<div class="form-group">
+													<label class="sr-only" for="city2">City</label>
+													<select class="form-control" id="city2" data-city="---- 选择市 ----"></select>
+												</div>
+												<div class="form-group">
+													<label class="sr-only" for="district2">District</label>
+													<select class="form-control" id="district2" data-district="---- 选择区 ----"></select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+										<button type="button" class="btn btn-primary">修改</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--注册框结束-->
+						<!--个人设置结束-->
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="//at.alicdn.com/t/font_486809_ebype8x5nfzs38fr.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="source/angular.min.js"></script>
+		<script src="js/distpicker.data.js"></script>
+		<script src="js/distpicker.js"></script>
+		<script>
+			$(function() {
+				$(".menu-list a").on('click', function() {
+					var index = $(".menu-list a").index(this);
+					$(".menu-list a").eq(index).addClass("active").siblings().removeClass("active");
+					$(".right-content>div").eq(index).addClass("show").removeClass("hidden").siblings().addClass("hidden").removeClass("show");
+				})
+			})
+		</script>
+	</body>
+
+</html>
